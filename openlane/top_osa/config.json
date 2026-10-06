@@ -1,0 +1,7 @@
+{
+  "DESIGN_NAME": "top_osa",
+  "VERILOG_FILES": "dir::src/*.v",
+  "CLOCK_PORT": null,
+  "RUN_CTS": false,
+  "FP_CORE_UTIL": 30
+}

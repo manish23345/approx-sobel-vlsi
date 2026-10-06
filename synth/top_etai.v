@@ -1,0 +1,27 @@
+// ============================================================
+// top_etai.v
+// Fixed-configuration synthesis top: ETAI approximate multiplier.
+// Note (see README): with Sobel's small kernel coefficients this
+// variant showed 0% output error in simulation -- it's still
+// worth synthesizing for its AREA/POWER numbers (fewer gates in
+// the adder tree is a real hardware saving even when this specific
+// application's coefficients don't exercise the approximation),
+// but don't expect a PSNR story here the way OSA has one.
+// ============================================================
+`timescale 1ns/1ps
+
+module top_etai (
+    input  wire [7:0] p00, p01, p02,
+    input  wire [7:0] p10, p11, p12,
+    input  wire [7:0] p20, p21, p22,
+    output wire [7:0] out_pixel
+);
+
+    sobel_top #(.PW(8), .MULT_SEL(2), .ETAI_ERR_BITS(4)) u_sobel (
+        .p00(p00), .p01(p01), .p02(p02),
+        .p10(p10), .p11(p11), .p12(p12),
+        .p20(p20), .p21(p21), .p22(p22),
+        .out_pixel(out_pixel)
+    );
+
+endmodule
