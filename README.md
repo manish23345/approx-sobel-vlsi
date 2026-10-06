@@ -1,6 +1,5 @@
 
 
-```markdown
 # Approximate Sobel Edge Detection — VLSI Implementation
 
 An RTL-to-GDSII implementation study of an approximate Sobel edge-detection architecture using approximate multipliers.
@@ -284,5 +283,4 @@ Dayananda Sagar College of Engineering, Bengaluru
 ## License
 
 This project is intended for academic, research, and educational purposes.
-```
 
