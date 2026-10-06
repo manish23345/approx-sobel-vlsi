@@ -284,3 +284,17 @@ Dayananda Sagar College of Engineering, Bengaluru
 
 This project is intended for academic, research, and educational purposes.
 
+
+## Physical Layout
+
+### Exact Implementation
+
+![Exact Layout](results/layout/top_exact_layout.png)
+
+### OSA Approximate Implementation
+
+![OSA Layout](results/layout/top_osa_layout.png)
+
+### ETAI Approximate Implementation
+
+![ETAI Layout](results/layout/top_etai_layout.png)
